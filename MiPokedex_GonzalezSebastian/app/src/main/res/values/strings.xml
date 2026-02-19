@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MiPokedex_GonzalezSebastian</string>
+    <string name="pikachu_name">Pikachu</string>
+    <string name="pikachu_description">Cuando se enfada, este Pokémon descarga la energía que almacena en el interior de las bolsas de las mejillas.</string>
+    <string name="type_tag">Eléctrico</string>
+    <string name="height_tag">Altura</string>
+    <string name="weight_tag">Peso</string>
+    <string name="skill_tag">Habilidad</string>
 </resources>
