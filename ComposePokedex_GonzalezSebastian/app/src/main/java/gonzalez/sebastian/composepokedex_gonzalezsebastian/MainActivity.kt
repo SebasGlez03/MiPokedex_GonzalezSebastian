@@ -33,6 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import gonzalez.sebastian.composepokedex_gonzalezsebastian.components.Ability
 import gonzalez.sebastian.composepokedex_gonzalezsebastian.components.Chip
+import gonzalez.sebastian.composepokedex_gonzalezsebastian.components.ContiguousObjects
 import gonzalez.sebastian.composepokedex_gonzalezsebastian.domain.Pokemon
 import gonzalez.sebastian.composepokedex_gonzalezsebastian.ui.theme.ComposePokedex_GonzalezSebastianTheme
 import gonzalez.sebastian.composepokedex_gonzalezsebastian.ui.theme.ElectricYellow
@@ -123,6 +124,13 @@ fun PokemonCard(name: String, weight: Float, height: Float, description: String,
                     .align(Alignment.CenterHorizontally)
                     .padding(25.dp)) {
                     Text(description)
+                }
+                Row(modifier = Modifier.fillMaxWidth()
+                    .fillMaxHeight(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.Bottom){
+                        ContiguousObjects("left", R.drawable.arbok, "Arbok", 24)
+                        ContiguousObjects("right", R.drawable.raichu, "Raichu", 26)
                 }
             }
 
